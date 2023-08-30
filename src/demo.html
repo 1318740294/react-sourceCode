@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div id="box">
+    <button id="a1">add</button>
+    <button id="b1">delete</button>
+    123456
+  </div>
+  <script>
+    // var box = document.querySelector('#box')
+    // box.addEventListener('click',function(e){
+    //   console.log(e,e.target);
+    // })
+    var a1 = document.querySelector('#a1')
+    a1.addEventListener('click',function(){
+      console.log(a1);
+    })
+    document.addEventListener("selectionchange", () => {
+  console.log(document.getSelection());
+})
+  </script>
+</body>
+</html>
